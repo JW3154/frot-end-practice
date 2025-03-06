@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+  </head>
+  <body>
+    <label for="user-id">아이디</label>
+    <br>
+    <input type="text" id="user-id">
+    <br>
+    <label for="user-pw">비밀번호</label>
+    <br>
+    <input type="text" id="user-pw">
+    <br>
+    <label for="user-birth">생일</label>
+    <br>
+    <input type="date" id="user-birth">
+    <br>
+    <label for="use-profile">프로필사진</label>
+    <br>
+    <input type="file" id="profile" name="profile" accept="image/png, image/jpeg" />
+    <br>
+    <form>
+        <label for="mobile"></label>
+        <input list="mobile-company" id="mobile" />
+        <datalist id="mobile-company">
+            <option value="SKT"></option>
+            <option value="U+"></option>
+            <option value="KT"></option>
+        </datalist>
+    </form>
+    <br>
+    <label for="number">연락처</label>
+    <br>
+    <input type="tel" id="number">
+    <br>
+    <fieldset class="fieldset">
+        <legend>성별</legend>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">남성</label>
+       
+        <input type="radio" name="gender" value="females" id="female" />
+        <label for="female">여성</label>
+       
+      </fieldset>
+
+  </body>
+</html>
