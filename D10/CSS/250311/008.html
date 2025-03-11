@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul :first-child {
+            color: red;
+        }
+
+        ul :last-child {
+            color: blue;
+        }
+
+        body > :first-child {
+            background-color: orange;
+        }
+
+        body > :last-child {
+            background-color: green;
+        }
+    </style>
+  </head>
+  <body>
+    <div>body의 직계자손</div>
+    <ul>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+        <li>n번쨰 항목</li>
+    </ul>
+  </body>
+</html>

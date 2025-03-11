@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        p::before {
+            content: "반갑습니다";
+            color: orange;
+        }
+
+        p::after {
+            content: "좋은 밤입니다.";
+        }
+        /* <img> <br> <input>에는 적용 불가 */
+
+        input::placeholder, 
+        textarea::placeholder{
+            color: red;
+            opacity: 0,4;
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+        <strong>안녕하세요!</strong>
+    </p>
+
+    <input type="text" placeholder="이름을 입력하세요">
+    <textarea name="" id="" placeholder="자기소개를 작성해주세요">
+    </textarea>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* 
+        :is의 우선순위가 :where 보다 높다
+        */
+        :is(h1, h2, h3) a {
+            color: red;
+        }
+
+        :where(h1, h2, h3) a {
+            color: blue;
+        }
+
+        div:has(a) {
+            background-color: lightblue;
+        }
+    </style>
+  </head>
+  <body>
+    <h1><a>hello</a></h1>
+    <h2><a>hello</a></h2>
+    <h3><a>hello</a></h3>
+    <h4><a>hello</a></h4>
+    <div>
+        <p>lorem ipsum</p>
+    </div>
+    <div>
+        <a href="#">click me</a>
+    </div>
+  </body>
+</html>

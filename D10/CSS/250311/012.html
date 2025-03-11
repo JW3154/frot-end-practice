@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        button:focus{
+            background-color: aqua;
+        }
+
+        /* 불필요한 시작적 표시를 줄이고, 키보드 사용자에게 현테 위치를
+        알리기 위함 */
+        button:focus-visible{
+            border: solid 3px red;
+        }
+
+        .form-group {
+            padding: 10px;
+            border: solid 2px gray;
+        }
+
+        .form-group:focus-within {
+            background-color: lightblue;
+            border-color: blue;
+        }
+
+        button {
+            background-color: green;
+        }
+
+        button:enabled:hover {
+            background-color: lightcoral;
+        }
+
+        button:disabled {
+            background-color: lightgray;
+            color: gray;
+            cursor: not-allowed;
+        }
+
+        input[type="checkbox"]:checked {
+            /*input textarea select 컨트롤 요소의 기본 모양을 제어*/
+            appearance: none;
+        }
+
+        input[type="checkbox"]:checked::before {
+            content: "너무 빨라요";
+        }
+    </style>
+  </head>
+  <body>
+    <button>button</button>
+
+    <div class="form-group">
+        <label for="name">name:</label>
+        <input type="text" id="name" />
+    </div>
+
+    <form action="">
+        <button>submit</button>
+        <button disabled>reset</button>
+    </form>
+
+    <div class="checkbox-group">
+        <input type="checkbox" name="option1"
+        value="1">
+        option1
+    </div>
+  </body>
+</html>
