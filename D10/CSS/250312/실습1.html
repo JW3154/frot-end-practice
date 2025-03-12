@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- 대부분의 브라우저에서 폰트 크기의 디폴트 값은 16px입니다.
+    따라서 별도로 스타일링을 해주지 않았다면 1em = 16px이 됩니다. -->
+    <style>
+        p {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 1.25em;
+        }
+        .parents {
+            width: 25vw;
+            font-size: 50px;
+            background-color: aqua;
+        }
+
+        .child1 {
+            width: 50vw;
+            font-size: 50%;
+            background-color: lightcoral;
+        }
+
+        .child2 {
+            width: 100vw;
+            font-size: 50%;
+            background-color: plum;
+        }
+    </style>
+  </head>
+  <body>
+    <p class="rem">rem을 사용해서 font-size: 40px;</p>
+    <h2>px을 사용해서 font-size: 40px;</h2>
+    <h3>em을 사용해서 font-size: 20px;</h3>
+    <div class="parents">
+        너비가 뷰포트를 기준으로 1/4
+        <br />
+        font-size: 50px;
+        <div class="child1">
+            글씨의 사이즈는 부모의 50%
+            <br />
+            너비가 뷰포트 기준으로 1/2
+            <div class="child2">
+                글씨의 사이즈는 부모의 50%
+                <br />너비가 뷰포트 기준으로 100%
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

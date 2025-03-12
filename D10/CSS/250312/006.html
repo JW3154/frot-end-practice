@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        p {
+            width: 300px;
+            height: 100px;
+            overflow: hidden;
+            background-color: antiquewhite;
+
+            /* 텍스트의 가로 정렬
+            /* 기본값은 left 왼쪽정렬 */
+            /* text-align: right;
+            text-align: center;
+            text-align: justify; */
+
+            /* 텍스트의 시작부분 여백설정 */
+            text-indent: 30px;
+            /* text-indent: -30px; */
+
+            /* 줄바꿈 동작 제어, 기본값은 nomals */
+            word-break: break-all;
+            word-break: keep-all;
+
+            /* 텍스트 말줄임표 */
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+
+        .multi-ellipsis 
+        {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+    </style>
+  </head>
+  <body>
+    <p class="multi-ellipsis">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Iusto numquam ipsa velit omnis, delectus distinctio! Optio aut odit minus ipsam cumque, 
+        asperiores dicta aspernatur quae nam necessitatibus? Ipsam, consectetur vel?
+
+        너무빨라서 따라가기가 어렵네
+    </p>
+  </body>
+</html>

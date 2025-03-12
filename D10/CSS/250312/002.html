@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+        .rem{
+            font-size: 2rem;
+        }
+        .em {
+            font-size: 16px;
+        }
+        .em div{
+            font-size: 2em;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    div.rem 이라고 작성하면 <div class="rem"></div>  자동 생성
+    root em의 약자, <html> 태그의 폰트 사이즈 기준
+    -->
+    <div class="rem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperio
+        res obcaecati eos aspernatur eum ut quia minus? Facilis quod quasi aspernatur in doloremque cum mollitia, 
+        doloribus adipisci earum. Quibusdam, repudiandae consequuntur.
+    </div>
+
+    <!-- 부모요소의 폰트사이즈 기준 -->
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperio
+        res obcaecati eos aspernatur eum ut quia minus? Facilis quod quasi aspernatur in 
+        doloremque cum mollitia, doloribus adipisci earum. Quibusdam, repudiandae consequuntur.
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quas explicabo mollitia at libero aliquam repudiandae iure quos architecto vero obcaecati voluptate consectetur 
+            voluptatibus corrupti nemo, ullam molestiae expedita est saepe!
+        </div>
+    </div>
+
+  </body>
+</html>
