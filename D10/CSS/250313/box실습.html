@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flex {
+            width: 120px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f0f0;
+            
+        }
+
+        .box1 {
+            border-width: 8px;
+            border-style: groove;
+            border-bottom-style: solid;
+            border-right-style: solid;
+            border-color: black;
+            background-color: darkgrey;
+        }
+
+        .box2 {
+            border-radius: 50px 50px 50px 50px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            border: 5px dashed blueviolet;
+        }
+
+        .box3 {
+            border-radius: 0px 50px 50px 50px;
+            border: 3px solid lightgray;
+            background-color: antiquewhite;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+        <div class="flex box1">Hello🦊</div>
+        <div class="flex box2">Hello🦊</div>
+        <div class="flex box3">Hello🦊</div>
+    </div>
+  </body>
+</html>
